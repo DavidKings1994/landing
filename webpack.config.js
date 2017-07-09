@@ -2,26 +2,23 @@ var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-    entry: {
-        main: __dirname + "/js/main.js",
-        styles: __dirname + '/sass/landing.scss'
-    },
+    entry: [ __dirname + "/js/main.js", __dirname + "/sass/landing.scss"],
     output: {
-        path: __dirname + "/js/dist/",
+        path: __dirname + "/dist/",
         publicPath: __dirname + "/public/",
         filename: "[name].bundle.js",
         chunkFilename: "[id].bundle.js"
     },
     plugins: [
+        new ExtractTextPlugin({
+            filename: '[name].bundle.css',
+            allChunks: true
+        }),
         new webpack.ProvidePlugin({
             $: 'jquery',
             jquery: 'jquery',
             'window.jQuery': 'jquery',
             jQuery: 'jquery'
-        }),
-        new ExtractTextPlugin({
-            filename: __dirname + '/dist/[name].bundle.css',
-            allChunks: true,
         })
     ],
     resolve: {
