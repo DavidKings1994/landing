@@ -1,2 +1,26 @@
+#navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: transparent;
+  transition: 0.3s linear all; }
+  #navbar .navbar-nav {
+    width: 80%;
+    text-align: center; }
+  #navbar .nav-item {
+    padding-left: 0;
+    padding-right: 0; }
+  #navbar .navbar-brand {
+    margin: 0; }
+  #navbar ul > *.active {
+    background-color: transparent;
+    border-top: #00B89C 3px solid; }
+
+.top-nav-collapse {
+  background: #313131 !important; }
+
 #home {
-  color: white; }
+  color: #e6e6e6; }
+  #home .btn {
+    background-color: #00B89C; }
+  #home .btn:hover {
+    background-color: #66C6BA; }

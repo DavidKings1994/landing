@@ -1,0 +1,11 @@
+#home {
+    color: $main-text;
+
+    .btn {
+        background-color: $main;
+    }
+
+    .btn:hover {
+        background-color: $main-selected;
+    }
+}
