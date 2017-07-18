@@ -1,7 +1,7 @@
 /* YOUR CUSTOM STYLES */
 
 .view {
-    background: url(./../img/photos/desk.jpg) no-repeat center center fixed;
+    background: url(./../img/photos/working.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -10,4 +10,20 @@
 
 html, body, .view {
     height: 100%;
+}
+
+.lista-servicios {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 90%;
+}
+
+.lista-servicios i {
+    color: green;
+}
+
+#socialLinks {
+
 }
