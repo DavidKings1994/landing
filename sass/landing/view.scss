@@ -1,3 +1,41 @@
+body {
+    background: $background;
+}
+
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+@mixin animation($str) {
+    -webkit-animation: #{$str};
+    -moz-animation: #{$str};
+    -ms-animation: #{$str};
+    -o-animation: #{$str};
+    animation: #{$str};
+}
+
+@mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
 #home {
     color: $main-text;
 
@@ -9,3 +47,43 @@
         background-color: $main-selected;
     }
 }
+
+#hesturTitle {
+    font-family: CalistoMT;
+    font-size: 0.8em;
+    display: block;
+}
+
+.fade-in {
+    opacity: 1;
+    max-height: 100px;
+    @include transition(opacity .3s ease);
+    @include transition(max-height .3s ease);
+}
+
+.fade-out {
+    opacity: 0;
+    max-height: 0px;
+    @include transition(opacity .3s ease);
+    @include transition(max-height .3s ease);
+}
+
+#contactForm {
+    > a {
+        margin: 10px auto;
+        background-color: $main;
+    }
+
+    #formMessage {
+        height: 170px;
+
+        textarea {
+            height: 100%;
+        }
+    }
+}
+
+// .full-bg-img {
+//     background-color: rgba(0,0,0,.7);
+//     box-shadow: inset 0px 0px 100px 100px rgb(49, 49, 49);
+// }

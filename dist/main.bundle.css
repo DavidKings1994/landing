@@ -1,3 +1,7 @@
+@font-face {
+  font-family: CalistoMT;
+  src: url("/../../font/calisto-mt/calisto-mt.ttf"); }
+
 #navbar {
   padding-top: 0;
   padding-bottom: 0;
@@ -9,8 +13,18 @@
   #navbar .nav-item {
     padding-left: 0;
     padding-right: 0; }
+    #navbar .nav-item a {
+      height: 100%;
+      line-height: 37px; }
   #navbar .navbar-brand {
     margin: 0; }
+    #navbar .navbar-brand svg, #navbar .navbar-brand img {
+      height: 37px;
+      width: auto;
+      display: block;
+      margin: 5px auto; }
+    #navbar .navbar-brand .hesturLogo {
+      fill: #ffffff; }
   #navbar ul > *.active {
     background-color: transparent;
     border-top: #00B89C 3px solid; }
@@ -18,9 +32,54 @@
 .top-nav-collapse {
   background: #313131 !important; }
 
+body {
+  background: #FFFFFF; }
+
 #home {
   color: #e6e6e6; }
   #home .btn {
     background-color: #00B89C; }
   #home .btn:hover {
     background-color: #66C6BA; }
+
+#hesturTitle {
+  font-family: CalistoMT;
+  font-size: 0.8em;
+  display: block; }
+
+.fade-in {
+  opacity: 1;
+  max-height: 100px;
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  -ms-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  -webkit-transition: max-height 0.3s ease;
+  -moz-transition: max-height 0.3s ease;
+  -ms-transition: max-height 0.3s ease;
+  -o-transition: max-height 0.3s ease;
+  transition: max-height 0.3s ease; }
+
+.fade-out {
+  opacity: 0;
+  max-height: 0px;
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  -ms-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  -webkit-transition: max-height 0.3s ease;
+  -moz-transition: max-height 0.3s ease;
+  -ms-transition: max-height 0.3s ease;
+  -o-transition: max-height 0.3s ease;
+  transition: max-height 0.3s ease; }
+
+#contactForm > a {
+  margin: 10px auto;
+  background-color: #00B89C; }
+
+#contactForm #formMessage {
+  height: 170px; }
+  #contactForm #formMessage textarea {
+    height: 100%; }

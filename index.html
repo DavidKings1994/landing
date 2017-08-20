@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Hestur - landing</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/logos/hestur.png"/>
+    <title>Hestur | Soluciones web y consultoria</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
@@ -31,10 +32,23 @@
                         <a class="nav-link" href="#Servicios">Servicios</a>
                     </li>
                     <li class="nav-item col-md-2">
-                        <a class="nav-link" href="#Paquetes">Paquetes</a>
+                        <a class="nav-link" href="#Paquetes">Beneficios</a>
                     </li>
                     <a class="navbar-brand active col-md-2" href="#">
-                        <strong>Hestur</strong>
+                        <!-- <strong>Hestur</strong> -->
+                        <!-- <img src="img/logos/Hesture_Logo_01.png" alt="Hestur logo"> -->
+                        <svg version="1.0" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        	 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
+                        <g>
+                        	<path class="hesturLogo" fill="#010002" d="M19.781,5.439c0,0,0.89-0.205,1.905-0.012c0,0-1.711-1.846-2.715-2.293l-0.466,1.198L19.781,5.439z"/>
+                        	<path class="hesturLogo" fill="#010002" d="M28.565,14.174c-3.136-3.269-10.319-9.82-10.319-9.82L20.019,0l-5.857,3.251v0.01
+                        		C-3.103,10.177,0.265,29.865,0.265,29.865s0.694-0.002,1.813-0.005c-1.585-7.569,0.946-13.833,0.946-13.833
+                        		c-2.095,9.562-0.152,13.197,0.258,13.83c5.148-0.013,15.224-0.034,16.688-0.008c-0.665-4.169-4.285-9.179-4.339-9.242
+                        		c-0.232-0.467-0.402-0.835-0.469-1.039c-0.641-1.954-0.043-3.394,0.872-5.022c3.045,4.685,8.167,1.839,8.167,1.839l1.32,1.549
+                        		l1.124,0.296l1.311-1.396l0.892-0.596C28.499,15.047,28.637,14.893,28.565,14.174z"/>
+                        </g>
+                        </svg>
+                        <span id="hesturTitle" class="">HESTUR</span>
                     </a>
                     <li class="nav-item col-md-2">
                         <a class="nav-link" href="#Nosotros">Nosotros</a>
@@ -51,9 +65,12 @@
         <div class="full-bg-img flex-center">
             <div class="container">
                 <div class="row" id="home">
-                    <div class="col-md-6 offset-md-6">
+                    <div class="col-md-6">
+                        <!-- <img src="img/logos/hestur.png" alt=""> -->
+                    </div>
+                    <div class="col-md-6">
                         <div class="description">
-                            <h2 class="h2-responsive wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">Agencia digital</h2>
+                            <h1 class="h2-responsive wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">Soluciones y consutoria</h1>
                             <hr class="hr-dark">
                             <p class="wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
                                 Cada negocio es un mundo y tiene necesidades diferentes, nosotros lo entendemos y hacemos soluciones
@@ -78,7 +95,7 @@
                 <div class="col-md-4">
                     <div class="card wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
                         <div class="view overlay hm-white-slight">
-                            <img src="./img/photos/photoshop.jpg" class="img-fluid" alt="">
+                            <img src="./img/photos/photoshop_ch.jpg" class="img-fluid" alt="">
                             <a href="#">
                                 <div class="mask waves-light waves-effect waves-light"></div>
                             </a>
@@ -99,7 +116,7 @@
                 <div class="col-md-4">
                     <div class="card wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-name: fadeInUp;">
                         <div class="view overlay hm-white-slight">
-                            <img src="./img/photos/desk.jpg" class="img-fluid" alt="">
+                            <img src="./img/photos/desk_ch.jpg" class="img-fluid" alt="">
                             <a href="#">
                                 <div class="mask waves-light waves-effect waves-light"></div>
                             </a>
@@ -121,7 +138,7 @@
                 <div class="col-md-4">
                     <div class="card wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-name: fadeInUp;">
                         <div class="view overlay hm-white-slight">
-                            <img src="./img/photos/graphics.jpg" class="img-fluid" alt="">
+                            <img src="./img/photos/graphics_ch.jpg" class="img-fluid" alt="">
                             <a href="#">
                                 <div class="mask waves-light waves-effect waves-light"></div>
                             </a>
@@ -303,8 +320,8 @@
             <h2 class="h2-responsive wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">Contacto</h2>
         </div>
         <section>
-            <div class="row">
-                <div class="col-md-6 offset-md-6">
+            <div class="row" id="contactForm">
+                <div class="col-md-6">
                     <div class="md-form">
                         <i class="fa fa-user prefix"></i>
                         <input type="text" name="nombre" class="form-control">
@@ -320,12 +337,17 @@
                         <input type="text" name="telefono" class="form-control">
                         <label for="form2" class="">Telefono</label>
                     </div>
-                    <div class="md-form">
+                </div>
+                <div class="col-md-6">
+                    <div class="md-form" id="formMessage">
                         <i class="fa fa-pencil prefix"></i>
                         <textarea type="text" name="mensaje" class="md-textarea"></textarea>
                         <label for="form8" class="">mensaje</label>
                     </div>
                 </div>
+                <a class="btn btn-ptc wow fadeInLeft waves-effect waves-light" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
+                    Enviar!
+                </a>
             </div>
         </section>
     </div>
@@ -338,8 +360,7 @@
 
                 <!--First column-->
                 <div class="col-md-3 offset-md-1">
-                    <h5 class="title">Hestur</h5>
-                    <p>Consultoria y desarrollo en un solo lugar</p>
+                    <img src="img/logos/Hesture_Logo_01.png" alt="logo de hestur">
                 </div>
                 <!--/.First column-->
 

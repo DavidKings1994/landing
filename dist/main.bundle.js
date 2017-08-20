@@ -63,18 +63,35 @@
 /******/ 	__webpack_require__.p = "C:\\xampp\\htdocs\\landing/public/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(3)], __WEBPACK_AMD_DEFINE_RESULT__ = function($) {
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(2)], __WEBPACK_AMD_DEFINE_RESULT__ = function($) {
+    function checkScroll() {
+        var height = $(window).scrollTop();
+        if(height > 40) {
+            $('#hesturTitle').removeClass("fade-in");
+            $('#hesturTitle').addClass("fade-out");
+        } else {
+            $('#hesturTitle').removeClass("fade-out");
+            $('#hesturTitle').addClass("fade-in");
+        }
+    }
+
     $(document).ready(function() {
+        checkScroll();
+
         $('.navbar-nav > *').click(function() {
             $('.navbar-nav > *').removeClass('active');
             $(this).addClass('active');
+        });
+
+        $(window).scroll(function() {
+            checkScroll();
         });
     });
 }.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
@@ -89,14 +106,6 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
 
 /***/ }),
 /* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(0);
-module.exports = __webpack_require__(1);
-
-
-/***/ }),
-/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10353,6 +10362,14 @@ if ( !noGlobal ) {
 
 return jQuery;
 } );
+
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(0);
+module.exports = __webpack_require__(1);
 
 
 /***/ })

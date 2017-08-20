@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: CalistoMT;
+    src: url("/../../font/calisto-mt/calisto-mt.ttf");
+}
+
 @import "landing/colors";
 @import "landing/navbar";
 @import "landing/view";

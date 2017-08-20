@@ -12,10 +12,26 @@
     .nav-item {
         padding-left: 0;
         padding-right: 0;
+
+        a {
+            height: 100%;
+            line-height: 37px;
+        }
     }
 
     .navbar-brand {
         margin: 0;
+
+        svg, img {
+            height: 37px;
+            width: auto;
+            display: block;
+            margin: 5px auto;
+        }
+
+        .hesturLogo {
+            fill: #ffffff;
+        }
     }
 
     ul>*.active {
